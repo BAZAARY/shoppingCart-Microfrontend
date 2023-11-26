@@ -1,13 +1,14 @@
 import React from "react";
-import * as ReactDOMClient from 'react-dom/client';
+import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react"; 
+import App from "./App";
+import 'react-toastify/dist/ReactToastify.css';
 
-import Root from "./root.component"
 
 const lifecycles = singleSpaReact({
   React,
-  ReactDOMClient,
-  rootComponent: Root ,
+  ReactDOM,
+  rootComponent: App ,
   errorBoundary(err, info, props) {
     // Customize the root error boundary for your microfrontend here.
     return null;

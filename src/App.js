@@ -1,9 +1,7 @@
 import "./App.css";
-import "./index.css";
 import { Routes, Route , BrowserRouter} from "react-router-dom";
 import ShoppingCart from "./pages/shoppingCart";
 import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 import { ApolloProvider } from "@apollo/client";
 import client from "./connections/apollo";
 
